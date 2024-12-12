@@ -1,4 +1,4 @@
-package com.spring.employee.config;
+package com.spring.usercrud.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

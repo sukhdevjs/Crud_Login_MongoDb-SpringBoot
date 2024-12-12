@@ -1,13 +1,13 @@
-package com.spring.employee;
+package com.spring.usercrud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EmployeeApplication {
+public class usercrud {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EmployeeApplication.class, args);
+		SpringApplication.run(usercrud.class, args);
 	}
 
 }

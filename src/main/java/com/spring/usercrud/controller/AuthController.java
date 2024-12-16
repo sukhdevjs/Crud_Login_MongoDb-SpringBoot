@@ -77,7 +77,6 @@ public class AuthController {
                 roles));
     }
 
-
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest signUpRequest) {
 
@@ -108,7 +107,7 @@ public class AuthController {
             strRoles.forEach(role -> {
                 switch (role) {
                     case "admin":
-                        Role adminRole = roleRepository.findByName(UserRole.ROlE_ADMIN)
+                        Role adminRole = roleRepository.findByName(UserRole.ROLE_ADMIN)
                                 .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
                         roles.add(adminRole);
                         break;
